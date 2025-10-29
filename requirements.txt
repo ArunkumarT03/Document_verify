@@ -1,0 +1,12 @@
+# Core framework
+Django
+djangorestframework
+
+
+google-generativeai
+
+# File handling (PDF/text extraction etc.)
+PyPDF2
+
+requests
+python-dotenv

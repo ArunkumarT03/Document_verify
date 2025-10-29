@@ -1,0 +1,64 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+*.so
+
+# ===== Virtual Environment =====
+venv/
+.env/
+.venv/
+ENV/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ===== Django =====
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# ===== Environment & Credentials =====
+.env
+*.env
+.env.*
+secret_key.txt
+credentials.json
+google_api_key.json
+
+# ===== OS / Misc =====
+.DS_Store
+Thumbs.db
+
+# ===== Cache / Build =====
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+__pypackages__/
+.mypy_cache/
+pytest_cache/
+.coverage
+htmlcov/
+
+# ===== Node / Frontend (if web frontend exists) =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ===== Docker =====
+*.pid
+docker-compose.override.yml
