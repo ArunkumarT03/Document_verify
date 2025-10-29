@@ -1,6 +1,7 @@
 # Core framework
 Django
 djangorestframework
+django-cors-headers
 
 
 google-generativeai
