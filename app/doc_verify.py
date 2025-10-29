@@ -16,7 +16,11 @@ def verify_document_text(doc_type, text):
     # Use current local date to avoid Gemini using its own internal (old) date
     today = datetime.now().strftime("%d-%b-%Y")
 
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash",   generation_config={
+            "temperature": 0.0,   # ensures deterministic output
+            "top_p": 1.0,
+            "top_k": 1,
+        })
 
     prompt = f"""
     You are a financial document verification expert.
