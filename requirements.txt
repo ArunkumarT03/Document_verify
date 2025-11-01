@@ -13,3 +13,10 @@ requests
 python-dotenv
 
 gunicorn
+easyocr
+
+numpy
+
+
+
+
