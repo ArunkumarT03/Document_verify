@@ -96,8 +96,8 @@ class VerifyDocumentsView(APIView):
             text = "".join([page.extract_text() or "" for page in reader.pages])
             return text.strip()
 
-        elif file_name.endswith('.docx'):
-            return docx2txt.process(file_stream).strip()
+        # elif file_name.endswith('.docx'):
+        #     return docx2txt.process(file_stream).strip()
 
         elif file_name.endswith(('.png', '.jpg', '.jpeg')):
             image_array = np.frombuffer(file_bytes, np.uint8)
