@@ -82,7 +82,7 @@ class VerifyDocumentsView(APIView):
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def extract_text(self, file_obj):
-        import numpy as np, cv2, io, docx2txt
+        import numpy as np, cv2, io, docx2txt 
         from PyPDF2 import PdfReader
         import easyocr
 
