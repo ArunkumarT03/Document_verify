@@ -11,7 +11,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from app.doc_verify import verify_document_text
-import docx2txt
+
 import easyocr
 
 
@@ -82,7 +82,7 @@ class VerifyDocumentsView(APIView):
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def extract_text(self, file_obj):
-        import numpy as np, cv2, io, docx2txt 
+        import numpy as np, cv2, io 
         from PyPDF2 import PdfReader
         import easyocr
 
